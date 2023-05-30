@@ -1,50 +1,59 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: alibri;
-  }
-  .container {
-    max-width: 1450px;
-    margin: 0 auto;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: alibri;
+}
+.container {
+  max-width: 1450px;
+  margin: 0 auto;
+}
 
-  header{
-    width: 100vw;
-    background-image: url("./img/futer_fon.png");
-    background-repeat: no-repeat;
-  }
+header {
+  width: 100%;
+  background-image: url("./img/futer_fon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  .logo{
-    padding-top: 92px;
-  }
+.logo {
+  padding-top: 92px;
+}
 
-  .header{
-    padding-left: 200px;
-  }
+.header {
+  padding-left: 200px;
+}
 
-  .header_text h1{
-    margin-top: 160px;
-    color: #3333cc;
-    font-family: STIX Two Text;
-    font-size: 63px;
-  }
+.header_text h1 {
+  margin-top: 160px;
+  color: #3333cc;
+  font-family: STIX Two Text;
+  font-size: 63px;
+}
 
-  .header_text p{
-    margin-top: 40px;
-    font-family: roboto;
-    font-size: 24px;
-  }
+.header_text p {
+  margin-top: 40px;
+  font-family: roboto;
+  font-size: 24px;
+}
 
-  .header_btn {border: 0;
-        line-height: 2.5;
-        padding: 0 60px;
-        font-family: STIX Two Text;
-        font-size: 25px;
-        text-align: center;
-        color: #fff;
-        border-radius: 10px;
-        background-color: #4f18bc;
-        margin-top: 55px;
-        margin-bottom: 135px;
-    }
+.header__link {
+  border: 0;
+  line-height: 2.5;
+  padding: 20px 60px;
+  font-family: STIX Two Text;
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #4f18bc;
+}
+
+.header_btn {
+  margin-top: 55px;
   
+}
+
+.falh{
+    padding-bottom: 135px;
+}
