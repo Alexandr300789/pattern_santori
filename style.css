@@ -76,7 +76,7 @@ header {
 
 .part_1__content {
   margin-top: 40px;
-  margin-left: 35%;
+  margin-left: 40%;
 }
 
 .part_1__text1 {
@@ -87,17 +87,25 @@ header {
   color: #3333cc;
 }
 
-.part_1__text2{
-    margin-top: 70px;
-    max-width: 940px;
-    font-family: roboto;
-    font-size: 24px;
-    font-weight: bold;
+.part_1__text2 {
+  margin-top: 70px;
+  max-width: 940px;
+  font-family: roboto;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.part_1__text3, .part_1__text4{
-    margin-top: 45px;
-    max-width: 940px;
-    font-family: roboto;
-    font-size: 24px;
+.part_1__text3,
+.part_1__text4 {
+  margin-top: 45px;
+  max-width: 940px;
+  font-family: roboto;
+  font-size: 24px;
+}
+
+.btn_part1 {
+  margin-top: 100px;
+  float: right;
+  margin-right: 100px;
+  margin-bottom: 50px;
 }
