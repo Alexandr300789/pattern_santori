@@ -214,10 +214,36 @@ header {
 }
 
 @media screen and (max-width: 427px) {
+  .logo {
+    padding-top: 10px;
+  }
+  .header_text h1 {
+    margin-top: 30px;
+  }
   .part_1__text1 {
     font-size: 24px;
   }
   .btn_part1 {
     margin-right: 127px;
+  }
+}
+
+@media screen and (max-width: 377px) {
+  .header {
+    padding-left: 116px;
+  }
+  .falh {
+    padding-bottom: 30px;
+  }
+  .part_1__text1 {
+    font-size: 20px;
+  }
+  .part_1__text2,
+  .part_1__text3,
+  .part_1__text4 {
+    font-size: 18px;
+  }
+  .btn_part1 {
+    margin-right: 98px;
   }
 }
