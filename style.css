@@ -74,7 +74,8 @@ header {
   background-size: cover;
 }
 
-.part_1__content {
+.part_1__content,
+.part_1__content_2 {
   margin-top: 40px;
   margin-left: 40%;
 }
@@ -128,5 +129,95 @@ header {
   }
   .logo {
     padding-top: 50px;
+  }
+
+  .part_1__content_2 {
+    margin: 0px 40px;
+  }
+  .btn_part1 {
+    margin-right: 235px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  header {
+    background-size: 220%;
+  }
+  .btn_part1 {
+    margin-right: 220px;
+  }
+  .part_1__content {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .img_logo {
+    width: 50%;
+  }
+  .header_text h1 {
+    font-size: 40px;
+  }
+  .falh {
+    padding-bottom: 115px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding-left: 128px;
+  }
+  .header_btn {
+    margin-top: 25px;
+  }
+  .btn_part1 {
+    margin-right: 149px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .falh {
+    padding-bottom: 45px;
+  }
+  .part_1__text1 {
+    font-size: 28px;
+  }
+  .part_1__text2,
+  .part_1__text3,
+  .part_1__text4 {
+    margin-top: 45px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header_text h1 {
+    font-size: 30px;
+  }
+  .img_logo {
+    width: 40%;
+  }
+  .header_text p {
+    margin-top: 18px;
+    font-size: 18px;
+  }
+  .falh {
+    padding-bottom: 91px;
+  }
+  .header__link {
+    padding: 14px 31px;
+    font-size: 18px;
+  }
+  .btn_part1 {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 427px) {
+  .part_1__text1 {
+    font-size: 24px;
+  }
+  .btn_part1 {
+    margin-right: 127px;
   }
 }
