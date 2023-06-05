@@ -137,7 +137,8 @@ header {
   padding-bottom: 20px;
 }
 
-.description__text {
+.description__text,
+.info__text {
   font-size: 24px;
   font-family: "Roboto";
   color: rgb(51, 51, 51);
@@ -314,6 +315,26 @@ header {
   margin: 75px 0 115px 0;
 }
 
+/*                           Footer                      */
+
+.footer_img {
+  max-width: 285px;
+}
+
+.footer_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 130px;
+}
+
+.footer_list {
+  list-style: none;
+  font-family: roboto;
+  font-size: 22px;
+  font-weight: 50;
+}
+
 /*                          Адаптив                      */
 @media screen and (max-width: 1680px) {
   .audience {
@@ -401,6 +422,17 @@ header {
 
   .info__heading {
     font-size: 46px;
+  }
+
+  .footer_content {
+    flex-direction: column;
+  }
+
+  .footer_text_1,
+  .footer_text_2,
+  .footer_img {
+    margin-top: 25px;
+    text-align: center;
   }
 }
 
@@ -733,7 +765,9 @@ header {
     font-size: 18px;
   }
 
-  .audience, .profile, .info__text-box {
+  .audience,
+  .profile,
+  .info__text-box {
     margin: 0 20px;
   }
 
