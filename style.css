@@ -164,7 +164,8 @@ header {
 }
 
 .audience__title,
-.profile__heading {
+.profile__heading,
+.card__heading {
   font-size: 60px;
   font-family: "STIX Two Text";
   font-style: italic;
@@ -175,7 +176,9 @@ header {
 }
 
 .audience__list,
-.profile__text {
+.profile__text,
+.info__list,
+.card__text {
   font-size: 24px;
   font-family: "Roboto";
   color: rgb(51, 51, 51);
@@ -193,7 +196,8 @@ header {
 }
 
 .description__text_bold,
-.profile__text_bold {
+.profile__text_bold,
+.info__text_bold {
   font-weight: 700;
 }
 
@@ -239,6 +243,77 @@ header {
   margin-bottom: 80px;
 }
 
+/*       info       */
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin: 170px 10px 95px 10px;
+  padding-bottom: 120px;
+}
+
+.info__text-box {
+  max-width: 670px;
+}
+
+.info__heading {
+  color: #3333cc;
+  font-family: "STIX Two Text";
+  font-size: 63px;
+  line-height: 0.979;
+  font-weight: normal;
+}
+
+.info__item {
+  background-image: url(img/check-mark.png);
+  background-repeat: no-repeat;
+  background-position: left 25px;
+  padding: 18px 0;
+  padding-left: 40px;
+}
+
+.card {
+  max-width: 658px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 19.44px 4.56px rgba(0, 0, 0, 0.08);
+  margin-top: 120px;
+}
+
+.card__img {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.card__text-box {
+  text-align: center;
+  padding: 0 95px;
+}
+
+.card__price {
+  font-size: 63px;
+  font-family: "STIX Two Text";
+  color: rgb(51, 51, 51);
+  font-style: italic;
+  margin-top: 75px;
+}
+
+.card__price_sale {
+  font-size: 36px;
+  text-decoration: line-through;
+}
+
+.card__price_margin {
+  margin-top: 20px;
+}
+
+.card__btn {
+  margin: 75px 0 115px 0;
+}
+
 /*                          Адаптив                      */
 @media screen and (max-width: 1680px) {
   .audience {
@@ -256,7 +331,7 @@ header {
 
 @media screen and (max-width: 1440px) {
   .part-4 {
-  background-image: url(img/part-4_fon2.png);
+    background-image: url(img/part-4_fon2.png);
   }
 
   .audience {
@@ -264,11 +339,15 @@ header {
     padding: 120px 0;
   }
 
-  .audience__title, .profile__heading {
+  .audience__title,
+  .profile__heading {
     font-size: 46px;
     padding-bottom: 20px;
   }
-  
+
+  .card__text {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 1250px) {
@@ -299,12 +378,29 @@ header {
     margin-top: 10px;
   }
 
-  .profile__heading, .profile__text, .profile__quote  {
+  .profile__heading,
+  .profile__text,
+  .profile__quote {
     text-align: center;
   }
 
   .profile__quote {
     padding: 25px 0;
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0 0 0;
+  }
+
+  .info__text-box {
+    max-width: 990px;
+    margin: 0 10%;
+  }
+
+  .info__heading {
+    font-size: 46px;
   }
 }
 
@@ -332,26 +428,41 @@ header {
     padding: 80px 0;
   }
 
-  .audience__title, .profile__heading {
+  .audience__title,
+  .profile__heading {
     font-size: 36px;
     padding-bottom: 20px;
   }
 
-  .description__text-box {
-    margin: 0 40px;
-  }
-
-  .profile {
+  .description__text-box,
+  .profile,
+  .info__text-box {
     margin: 0 40px;
   }
 
   .profile__image {
-    width: 50%;
+    width: 70%;
+  }
+
+  .profile__text-box {
+    margin-bottom: 50px;
   }
 
   .profile__quote {
     font-size: 28px;
     text-align: center;
+  }
+
+  .info {
+    margin-top: 200px;
+  }
+
+  .info__heading {
+    font-size: 36px;
+  }
+
+  .card__btn {
+    margin-right: 0;
   }
 }
 
@@ -364,6 +475,10 @@ header {
   }
   .part_1__content {
     margin-right: 10px;
+  }
+
+  .card__btn {
+    margin-right: 0;
   }
 }
 
@@ -389,6 +504,27 @@ header {
   .btn_part1 {
     margin-right: 149px;
   }
+
+  .card__img {
+    margin: 40px 0;
+  }
+
+  .card__text-box {
+    padding: 0 50px;
+  }
+
+  .card__heading,
+  .card__price {
+    font-size: 48px;
+  }
+
+  .card__price_sale {
+    font-size: 32px;
+  }
+
+  .card__btn {
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -412,32 +548,67 @@ header {
     font-size: 32px;
     padding-bottom: 15px;
   }
-  
-  .description__text, .profile__text {
+
+  .description__text,
+  .profile__text {
     font-size: 20px;
     padding: 15px 0;
   }
 
-  .audience__title, .profile__heading {
+  .audience__title,
+  .profile__heading,
+  .info__heading {
     font-size: 32px;
   }
 
-  .audience__list {
+  .audience__list,
+  .info__text {
     font-size: 20px;
   }
 
-  .audience__item {
+  .audience__item,
+  .info__item {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  .info {
+    margin-top: 120px;
+  }
+
+  .info__item {
+    font-size: 20px;
+    background-position: left 20px;
   }
 
   .profile__quote {
     font-size: 22px;
   }
 
-  .profile__text-box {
-    margin-bottom: 120px;
+  .card {
+    margin-top: 80px;
   }
+
+  .card__heading {
+    font-size: 42px;
+    padding-bottom: 25px;
+  }
+
+  .card__text {
+    font-size: 18px;
+  }
+
+  .card__price_sale {
+    margin-top: 45px;
+  }
+
+  .card__btn {
+    margin: 55px 0 75px 0;
+  }
+
+  /* .profile__text-box {
+    margin-bottom: 120px;
+  } */
 }
 
 @media screen and (max-width: 500px) {
@@ -461,6 +632,27 @@ header {
   .btn_part1 {
     margin-top: 50px;
   }
+  .description {
+    margin-top: 150px;
+  }
+
+  .card {
+    margin-top: 20px;
+  }
+
+  .card__text-box {
+    padding: 0 25px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .profile__image {
+    width: 90%;
+  }
+
+  .profile__quote {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 427px) {
@@ -475,6 +667,35 @@ header {
   }
   .btn_part1 {
     margin-right: 127px;
+  }
+
+  .description__title,
+  .audience__title,
+  .profile__heading,
+  .info__heading {
+    font-size: 24px;
+  }
+
+  .audience__item,
+  .info__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .profile__text-box {
+    margin-bottom: 10px;
+  }
+
+  .card__heading {
+    font-size: 32px;
+  }
+
+  .card__text {
+    font-size: 16px;
+  }
+
+  .card__btn {
+    margin-right: 0;
   }
 }
 
@@ -497,22 +718,30 @@ header {
     margin-right: 98px;
   }
 
-  .description__title, .audience__title, .profile__heading {
-    font-size: 22px;
+  .description__title,
+  .audience__title,
+  .profile__heading,
+  .info__heading {
+    font-size: 24px;
   }
 
-  .description__text, .profile__text, .audience__list {
+  .description__text,
+  .profile__text,
+  .audience__list,
+  .info__text,
+  .info__item {
     font-size: 18px;
   }
-  
-}
 
-@media screen and (max-width: 440px) {
-  .profile__image {
-    width: 70%;
+  .audience, .profile, .info__text-box {
+    margin: 0 20px;
   }
 
-  .profile__quote {
-    font-size: 18px;
+  .card__btn {
+    margin-right: 0;
+  }
+
+  .profile__text-box {
+    margin-bottom: 50px;
   }
 }
