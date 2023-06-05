@@ -120,6 +120,7 @@ header {
 .description {
   background-image: url(img/SANTORI_small.png);
   background-repeat: no-repeat;
+  margin-top: 250px;
 }
 
 .description__text-box {
