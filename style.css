@@ -111,11 +111,199 @@ header {
   margin-bottom: 50px;
 }
 
+/*       Part-3       */
+.part-3 {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.description {
+  background-image: url(img/SANTORI_small.png);
+  background-repeat: no-repeat;
+}
+
+.description__text-box {
+  max-width: 955px;
+  margin-left: 35%;
+}
+
+.description__title {
+  font-size: 36px;
+  font-family: "STIX Two Text";
+  font-style: italic;
+  line-height: 1.2;
+  color: #3333cc;
+  padding-bottom: 20px;
+}
+
+.description__text {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: rgb(51, 51, 51);
+  line-height: 1.2;
+  font-weight: 200;
+  padding: 21px 0;
+}
+
+/*       Part-4       */
+.part-4 {
+  width: 100%;
+  background-image: url(img/part-4_fon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 40px;
+}
+
+.audience {
+  /* display: flex;
+  flex-direction: column; */
+  max-width: 1080px;
+  padding-top: 335px;
+  padding-bottom: 150px;
+}
+
+.audience__title,
+.profile__heading {
+  font-size: 60px;
+  font-family: "STIX Two Text";
+  font-style: italic;
+  font-weight: lighter;
+  line-height: 1.2;
+  color: #3333cc;
+  padding-bottom: 45px;
+}
+
+.audience__list,
+.profile__text {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: rgb(51, 51, 51);
+  line-height: 1.5;
+  font-weight: 200;
+  list-style: none;
+}
+
+.audience__item {
+  background-image: url(img/check-mark.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 18px 0;
+  padding-left: 40px;
+}
+
+.description__text_bold,
+.profile__text_bold {
+  font-weight: 700;
+}
+
+/*       Part-5       */
+.part-5 {
+  width: 100%;
+  background-image: url(img/part-5_fon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.profile__text-box {
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 190px;
+  margin-top: 220px;
+}
+
+.profile__text {
+  padding: 17px 0;
+}
+
+.profile__quote {
+  font-size: 36px;
+  font-family: "STIX Two Text";
+  color: rgb(51, 51, 51);
+  font-style: italic;
+  line-height: 1.2;
+  text-indent: -9.094px;
+  padding-top: 78px;
+}
+
+.profile__image {
+  margin-bottom: 80px;
+}
+
 /*                          Адаптив                      */
+@media screen and (max-width: 1680px) {
+  .audience {
+    max-width: 990px;
+    padding: 180px 0;
+    transition: 1s;
+    margin-left: 2%;
+  }
+
+  .profile__image {
+    margin-bottom: 130px;
+    transition: 0.8s;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .part-4 {
+  background-image: url(img/part-4_fon2.png);
+  }
+
+  .audience {
+    margin: 0 10%;
+    padding: 120px 0;
+  }
+
+  .audience__title, .profile__heading {
+    font-size: 46px;
+    padding-bottom: 20px;
+  }
+  
+}
 
 @media screen and (max-width: 1250px) {
   .part_1 {
     background-size: 120%;
+  }
+
+  .description {
+    background-position: 50% 50%;
+    transition: 1s;
+  }
+
+  .description__text-box {
+    margin: 0 10%;
+    transition: 1s;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile__image {
+    margin-bottom: 10px;
+  }
+
+  .profile__text-box {
+    margin-top: 10px;
+  }
+
+  .profile__heading, .profile__text, .profile__quote  {
+    text-align: center;
+  }
+
+  .profile__quote {
+    padding: 25px 0;
   }
 }
 
@@ -136,6 +324,33 @@ header {
   }
   .btn_part1 {
     margin-right: 235px;
+  }
+
+  .audience {
+    margin: 0 40px;
+    padding: 80px 0;
+  }
+
+  .audience__title, .profile__heading {
+    font-size: 36px;
+    padding-bottom: 20px;
+  }
+
+  .description__text-box {
+    margin: 0 40px;
+  }
+
+  .profile {
+    margin: 0 40px;
+  }
+
+  .profile__image {
+    width: 50%;
+  }
+
+  .profile__quote {
+    font-size: 28px;
+    text-align: center;
   }
 }
 
@@ -187,6 +402,40 @@ header {
   .part_1__text4 {
     margin-top: 45px;
     font-size: 20px;
+  }
+
+  .part-3 {
+    margin-top: 50px;
+  }
+  .description__title {
+    font-size: 32px;
+    padding-bottom: 15px;
+  }
+  
+  .description__text, .profile__text {
+    font-size: 20px;
+    padding: 15px 0;
+  }
+
+  .audience__title, .profile__heading {
+    font-size: 32px;
+  }
+
+  .audience__list {
+    font-size: 20px;
+  }
+
+  .audience__item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .profile__quote {
+    font-size: 22px;
+  }
+
+  .profile__text-box {
+    margin-bottom: 120px;
   }
 }
 
@@ -245,5 +494,24 @@ header {
   }
   .btn_part1 {
     margin-right: 98px;
+  }
+
+  .description__title, .audience__title, .profile__heading {
+    font-size: 22px;
+  }
+
+  .description__text, .profile__text, .audience__list {
+    font-size: 18px;
+  }
+  
+}
+
+@media screen and (max-width: 440px) {
+  .profile__image {
+    width: 70%;
+  }
+
+  .profile__quote {
+    font-size: 18px;
   }
 }
