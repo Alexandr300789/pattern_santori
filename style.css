@@ -111,6 +111,110 @@ header {
   margin-bottom: 50px;
 }
 
+/* Part-2 */
+
+.part_2 {
+  background-image: url(./img/smart_object_fon\ 3.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 144px;
+}
+
+/* Smart object style */
+
+.smart_content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 220px;
+  padding-top: 200px;
+  /* width: 1134px; */
+  /* margin-left: 108px; */
+}
+
+.smart_object {
+  width: 260px;
+  height: 240px;
+  text-align: center;
+}
+
+.smart_object_title {
+  font-family: STIX Two Text;
+  font-size: 36px;
+  color: #504fd1;
+  padding-top: 20px;
+}
+
+.smart_object_text {
+  width: 258px;
+  padding-top: 10px;
+  font-family: Roboto, medium;
+  font-size: 30px;
+}
+
+.smart_object_img {
+  width: 122px;
+  height: 88px;
+  background: linear-gradient(left top, #9933cc, #3333cc);
+  color: #3333cc;
+}
+
+/* Workshop content style */
+.workshop {
+  margin-top: 164px;
+}
+
+.workshop_title {
+  font-family: STIX Two Text;
+  font-style: italic;
+  font-size: 60px;
+  color: #3333cc;
+  margin-bottom: 68px;
+  padding-left: 180px;
+}
+
+.workshop_content_item {
+  color: #3333cc;
+  font-family: STIX Two Text;
+  font-style: italic;
+  font-size: 36px;
+  margin-left: 160px;
+  max-width: 900px;
+}
+
+.workshop_content_item_text {
+  font-family: Roboto Light;
+  font-style: normal;
+  font-size: 24px;
+  padding-top: 40px;
+  color: #484848;
+  padding-left: 18px;
+}
+
+.workshop_btn {
+  margin-top: 88px;
+  margin-left: 175px;
+}
+
+.workshop__link {
+  border: 0;
+  line-height: 2.5;
+  padding: 20px 60px;
+  font-family: STIX Two Text;
+  font-size: 25px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  background: linear-gradient(left top, #9933cc, #3333cc);
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#9933cc), to(#3333cc));
+  background: -webkit-linear-gradient(left top, #9933cc, #3333cc);
+  background: -moz-linear-gradient(left top, #9933cc, #3333cc);
+  background: -o-linear-gradient(left top, #9933cc, #3333cc);
+  background: -ms-linear-gradient(left top, #9933cc, #3333cc);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#9933cc', endColorstr='#3333cc', GradientType=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#9933cc',endColorstr='#3333cc')";
+}
+
 /*       Part-3       */
 .part-3 {
   width: 100%;
@@ -514,6 +618,13 @@ form input {
   .title_form {
     padding-top: 50px;
   }
+
+  .smart_content{
+    flex-wrap: wrap;
+  }
+
+  .smart_object {
+    padding-top: 73px;
 }
 
 @media screen and (max-width: 800px) {
@@ -535,6 +646,18 @@ form input {
     margin-right: 235px;
   }
 
+  .part_2 {
+    background-size: 120%;
+  }
+
+  .smart_content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .smart_object {
+    margin-top: 80px;
+  }
   .audience {
     margin: 0 40px;
     padding: 80px 0;
@@ -582,6 +705,12 @@ form input {
   }
 }
 
+@media screen and (max-width: 780px) {
+  .smart_object {
+    margin-top: 0px;
+  }
+}
+
 @media screen and (max-width: 710px) {
   header {
     background-size: 220%;
@@ -599,6 +728,16 @@ form input {
 
   form input {
     width: 500px;
+  }
+
+  .workshop_content_item_text {
+    padding-left: 10px;
+  }
+  .workshop_title {
+    font-size: 52px;
+  }
+  .workshop_content_item {
+    margin-left: 81px;
   }
 }
 
@@ -627,6 +766,10 @@ form input {
 
   .title_form {
     font-size: 48px;
+  }
+
+  .workshop_title {
+    padding-left: 126px;
   }
 }
 
@@ -676,6 +819,10 @@ form input {
     margin-top: 45px;
     font-size: 20px;
   }
+
+  .workshop_title {
+    padding-left: 91px;
+}
 
   .part-3 {
     margin-top: 50px;
@@ -768,6 +915,11 @@ form input {
   .btn_part1 {
     margin-top: 50px;
   }
+
+  .workshop_title {
+    font-size: 44px;
+  }
+
   .description {
     margin-top: 150px;
   }
@@ -880,6 +1032,31 @@ form input {
   }
   .btn_part1 {
     margin-right: 98px;
+  }
+
+  .smart_content {
+    padding-top: inherit;
+  }
+
+  .workshop {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .workshop_title {
+    font-size: 36px;
+    text-align: center;
+    padding-right: 30px;
+  }
+
+  .workshop__link {
+    padding: 14px 31px;
+    font-size: 18px;
+  }
+
+  .workshop_content {
+    margin-right: 50px;
   }
 
   .description__title,
