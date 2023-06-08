@@ -104,6 +104,10 @@ header {
   font-size: 24px;
 }
 
+.part_1__text4 {
+  padding-bottom: 50px;
+}
+
 .btn_part1 {
   margin-top: 100px;
   float: right;
@@ -114,7 +118,7 @@ header {
 /* Part-2 */
 
 .part_2 {
-  background-image: url(./img/smart_object_fon\ 3.png);
+  background-image: url(./img/smart_object_fon\3png);
   background-repeat: no-repeat;
   background-size: 100%;
   margin-top: 144px;
@@ -524,6 +528,16 @@ form input {
   }
 }
 
+@media (min-width: 1650px) and (max-width: 2050px) {
+  .part_1 {
+    width: 90%;
+  }
+
+  .part_1__text4 {
+    padding-bottom: 150px;
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .part-4 {
     background-image: url(img/part-4_fon2.png);
@@ -619,12 +633,13 @@ form input {
     padding-top: 50px;
   }
 
-  .smart_content{
+  .smart_content {
     flex-wrap: wrap;
   }
 
   .smart_object {
     padding-top: 73px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -822,7 +837,7 @@ form input {
 
   .workshop_title {
     padding-left: 91px;
-}
+  }
 
   .part-3 {
     margin-top: 50px;
@@ -918,6 +933,15 @@ form input {
 
   .workshop_title {
     font-size: 44px;
+  }
+
+  .workshop_btn {
+    margin-left: 112px;
+  }
+
+  .workshop__link {
+    padding: 14px 35px;
+    font-size: 18px;
   }
 
   .description {
