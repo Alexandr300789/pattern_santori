@@ -292,7 +292,7 @@
           </div>
         </div>
       </section>
-      <section class="form">
+      <!-- <section class="form">
         <div class="container">
           <form action="">
             <p><a name="form"></a></p>
@@ -307,6 +307,44 @@
               class="btn_form"
             />
           </form>
+           -->
+<?php
+  //проверяем, существуют ли переменные в массиве POST
+  if(!isset($_POST['name']) and !isset($_POST['tel']) and !isset($_POST['email'])){
+ ?> <section class="form">
+  <div class="container">
+    <form action="send.php">
+      <p><a name="form"></a></p>
+      <h2 class="title_form">Записаться и оплатить</h2>
+      <input type="text" name="name" placeholder="Имя" />
+      <input type="tel" name="tel" placeholder="Номер телефона" />
+      <input type="email" name="email" placeholder="Электронная почта" />
+      <input
+        type="submit"
+        name="otpravit"
+        value="ЗАПИСАТЬСЯ И ОПЛАТИТЬ"
+        class="btn_form">
+    </form> 
+    <?php
+} else {
+ //показываем форму
+ $name = $_POST['name'];
+ $tel = $_POST['tel'];
+ $email = $_POST['email'];
+ $name = htmlspecialchars($name);
+ $tel = htmlspecialchars($tel);
+ $email = htmlspecialchars($email); 
+ $name = urldecode($name);
+ $tel = urldecode($tel);
+ $email = urldecode($email);
+ $name = trim($name);
+ $tel = trim($tel);
+ $email = trim($email);
+ if (mail("Apartments-Santori@yandex.ru", "Заявка с сайта", "ФИО:".$name.". Tel:".$tel.". E-mail: ".$email ,"From: Apartments-Santori@yandex.ru \r\n"))
+ {     echo "сообщение успешно отправлено";
+} else {
+    echo "при отправке сообщения возникли ошибки";
+}}?>
           <div class="form_text">
             <div>
               <p>
