@@ -1112,3 +1112,68 @@ form input {
     margin-bottom: 50px;
   }
 }
+
+@media screen and (max-width: 320px){
+  .header_text h1 {
+      margin-top: 20px;
+      font-size: 24px;
+      }
+      
+      .header_text p {
+      font-size: 14px;
+      margin-top: -14px;
+      }
+      
+      .header {
+      padding-left: 97px;
+    }
+      
+      .header_btn {
+      margin-top: 25px;
+    }
+      
+      .part_1__content {
+      margin-left: 40%;
+      }
+      
+      .part_1__content_2 {
+      margin: 30px 10px;
+    }
+      
+      .btn_part1 {
+      margin-right: 55px;
+    margin-top: -15px;
+      }
+      
+      .part_2 {
+      margin-top: 67px;
+    }
+      
+      .workshop_title {
+      font-size: 32px;
+      padding-left: 73px;
+      padding-right: 14px;
+      margin-bottom:20px;
+    }
+      
+      .workshop {
+      margin-top: 107px;
+    }
+      
+      .workshop_content {
+      margin-right: 38px;
+    }
+      
+     .workshop_content_item_text {
+      font-size: 20px;
+    }
+      
+      .workshop_btn {
+      margin-left: 53px;
+      margin-top: 53px;
+    }
+      
+      .card__price_margin {
+      padding-bottom: 30px;
+      }
+  }
