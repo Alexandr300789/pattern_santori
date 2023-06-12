@@ -1,28 +1,15 @@
 <?php
-$name = $_POST['name'];
-$tel = $_POST['tel'];
-$email = $_POST['email'];
-
-$name = htmlspecialchars($name);
-$tel = htmlspecialchars($tel);
-$email = htmlspecialchars($email);
-
-$name = urldecode($name);
-$tel = urldecode($tel);
-$email = urldecode($email);
-
-$name = trim($name);
-$tel = trim($tel);
-$email = trim($email);
-
-// echo $name;
-// echo "<br>";
-// echo $tel;
-// echo "<br>";
-// echo $email;
-
-if (mail("Apartments-Santori@yandex.ru", "Заявка с сайта", "ФИО:".$name.". Tel:".$tel.". E-mail: ".$email ,"From: Apartments-Santori@yandex.ru \r\n"))
- {     echo "сообщение успешно отправлено";
+$to = "Alexandr300789@yandex.ru"; // емайл получателя данных из формы
+$tema = "Заявка"; // тема полученного емайла
+$message = "ФИО заказчика: ".$_POST['name']."<br>";//присвоить переменной значение, полученное из формы name=name
+$message .= "E-mail: ".$_POST['email']."<br>"; //полученное из формы name=email
+$message .= "Номер телефона: ".$_POST['tel']."<br>"; //полученное из формы name=phone
+$headers = 'MIME-Version: 1.0' . "\r\n"; // заголовок соответствует формату плюс символ перевода строки
+$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n"; // указывает на тип посылаемого контента
+//mail($to, $tema, $message, $headers); //отправляет получателю на емайл значения переменных
+if (mail($to, $tema, $message, $headers))
+ {     echo "Ваша завяка успешно отправлена. Мы с Вами обязательно свяжемся!";
 } else {
-    echo "при отправке сообщения возникли ошибки";
-}?>
+    echo "При отправке завки возникли ошибки! Обратитесь по адресу электронной почты: Alexandr300789@yandex.ru";
+}
+?>
